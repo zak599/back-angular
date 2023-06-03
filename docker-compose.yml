@@ -1,0 +1,11 @@
+version: '3.2'
+services:
+    mongo:
+        image: mongo
+        environment:
+            MONGO_INITDB_ROOT_USERNAME: root
+            MONGO_INITDB_ROOT_PASSWORD: root
+        ports:
+            - '27021:27017'
+        volumes:
+            - ../db/projet_ent_sgbd/data/db:/data/db
